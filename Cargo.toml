@@ -6,7 +6,7 @@ readme = "README.md"
 repository = "https://github.com/fuchsnj/visitor"
 homepage = "https://github.com/fuchsnj/visitor"
 documentation = "https://github.com/fuchsnj/visitor"
-license = "MIT"
+license = "MIT/Apache-2.0"
 description = """
 A generic library to easily visit elements of a structure and perform an action on each one
 """
