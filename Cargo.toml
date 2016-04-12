@@ -2,5 +2,13 @@
 name = "visitor"
 version = "0.1.0"
 authors = ["Nathan Fuchs <fuchsnj@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/fuchsnj/visitor"
+homepage = "https://github.com/fuchsnj/visitor"
+documentation = "https://github.com/fuchsnj/visitor"
+license = "MIT"
+description = """
+A generic library to easily visit elements of a structure and perform an action on each one
+"""
 
 [dependencies]
