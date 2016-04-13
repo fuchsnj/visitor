@@ -4,8 +4,8 @@ struct Data{
 	a: u32,
 	b: u32
 }
-impl Visit for Data{
-	fn visit<V: Visitor>(&self, v: &mut V) -> Result<(),V::Error>{
+impl Visit<u32> for Data{
+	fn visit<V: Visitor<u32>>(&self, v: &mut V) -> Result<(),V::Error>{
 		try!(v.visit(self.a));
 		try!(v.visit(self.b));
 		Ok(())
@@ -15,7 +15,7 @@ impl Visit for Data{
 struct AddVisitor{
 	value: u32
 }
-impl Visitor for AddVisitor{
+impl Visitor<u32> for AddVisitor{
 	type Error = ();
 	fn visit(&mut self, data: u32) -> Result<(), Self::Error>{
 		self.value += data;

@@ -1,11 +1,11 @@
 #[cfg(test)]
 mod test;
 
-pub trait Visitor{
+pub trait Visitor<T>{
 	type Error;
-	fn visit(&mut self, data: u32) -> Result<(), Self::Error>;
+	fn visit(&mut self, data: T) -> Result<(), Self::Error>;
 }
 
-pub trait Visit{
-	fn visit<V: Visitor>(&self, f: &mut V) -> Result<(),V::Error>;
+pub trait Visit<T>{
+	fn visit<V: Visitor<T>>(&self, f: &mut V) -> Result<(),V::Error>;
 }
