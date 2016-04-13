@@ -1,6 +1,6 @@
 [package]
 name = "visitor"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Nathan Fuchs <fuchsnj@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/fuchsnj/visitor"
